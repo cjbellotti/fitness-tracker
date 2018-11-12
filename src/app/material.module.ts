@@ -7,6 +7,7 @@ import {
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
+    MatSidenavModule,
     MAT_DATE_LOCALE
  } from '@angular/material';
 
@@ -19,7 +20,8 @@ import {
         MatFormFieldModule,
         MatDatepickerModule,
         MatNativeDateModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatSidenavModule
     ],
     exports : [
         MatButtonModule,
@@ -28,7 +30,8 @@ import {
         MatFormFieldModule,
         MatDatepickerModule,
         MatNativeDateModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatSidenavModule
     ],
     providers : [
         {provide: MAT_DATE_LOCALE, useValue: 'es-AR'},  
