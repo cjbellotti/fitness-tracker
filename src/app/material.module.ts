@@ -8,6 +8,12 @@ import {
     MatNativeDateModule,
     MatCheckboxModule,
     MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatTabsModule,
+    MatCardModule,
+    MatSelectModule,
+    MatProgressSpinnerModule,
     MAT_DATE_LOCALE
  } from '@angular/material';
 
@@ -21,7 +27,13 @@ import {
         MatDatepickerModule,
         MatNativeDateModule,
         MatCheckboxModule,
-        MatSidenavModule
+        MatSidenavModule,
+        MatToolbarModule,
+        MatListModule,
+        MatTabsModule,
+        MatCardModule,
+        MatSelectModule,
+        MatProgressSpinnerModule
     ],
     exports : [
         MatButtonModule,
@@ -31,7 +43,13 @@ import {
         MatDatepickerModule,
         MatNativeDateModule,
         MatCheckboxModule,
-        MatSidenavModule
+        MatSidenavModule,
+        MatToolbarModule,
+        MatListModule,
+        MatTabsModule,
+        MatCardModule,
+        MatSelectModule,
+        MatProgressSpinnerModule
     ],
     providers : [
         {provide: MAT_DATE_LOCALE, useValue: 'es-AR'},  
