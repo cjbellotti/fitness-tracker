@@ -14,6 +14,7 @@ import {
     MatCardModule,
     MatSelectModule,
     MatProgressSpinnerModule,
+    MatDialogModule,
     MAT_DATE_LOCALE
  } from '@angular/material';
 
@@ -33,7 +34,8 @@ import {
         MatTabsModule,
         MatCardModule,
         MatSelectModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatDialogModule
     ],
     exports : [
         MatButtonModule,
@@ -49,7 +51,8 @@ import {
         MatTabsModule,
         MatCardModule,
         MatSelectModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatDialogModule
     ],
     providers : [
         {provide: MAT_DATE_LOCALE, useValue: 'es-AR'},  
