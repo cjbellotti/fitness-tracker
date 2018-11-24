@@ -9,7 +9,6 @@ import { TrainingService } from '../training.service';
 })
 export class CurrentTrainingComponent implements OnInit {
 
-  @Output() trainingExit : EventEmitter<void> = new EventEmitter<void>();
   progress = 0;
   timer : number;
 
@@ -27,6 +26,7 @@ export class CurrentTrainingComponent implements OnInit {
     this.timer = setInterval(() => {
       this.progress = this.progress + 1;
       if (this.progress >= 100) {
+        this._trainingService.completeExercise();
         clearInterval(this.timer);
       }
     }, step);
@@ -43,7 +43,7 @@ export class CurrentTrainingComponent implements OnInit {
     dialogRef.afterClosed()
       .subscribe( result => {
         if (result) {
-          this.trainingExit.emit();
+          this._trainingService.cancelExercise(this.progress);
         } else {
           this.startOrResumeTimer();
         }
